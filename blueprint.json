@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-03-08T13:03:56+11:00"
+    "timestamp": "2019-03-08T14:03:20+11:00"
   },
   "software": {
     "base": {
@@ -27,6 +27,11 @@
       "memory": {
         "required": 384,
         "recommended": 512
+      }
+    },
+    "scripts": {
+      "install": {
+        "content": "#!/bin/sh\r\n\r\nmkdir /home/home_dir/.ssh\r\ntouch /home/home_dir/.ssh/identity.pub\r\n"
       }
     },
     "installed_packages": [

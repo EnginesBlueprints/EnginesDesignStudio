@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-03-10T16:17:20+11:00"
+    "timestamp": "2019-03-10T17:37:44+11:00"
   },
   "software": {
     "base": {
@@ -64,10 +64,10 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "database/sql/mysql",
         "variables": {
-          "database_name": "_Builder(engine_name)",
-          "database_host": "_Builder(mysql_host)",
-          "db_username": "_Builder(engine_name)",
-          "db_password": "_Builder(random(10))",
+          "database_name": "Engines_Builder(engine_name)",
+          "database_host": "Engines_Builder(mysql_host)",
+          "db_username": "Engines_Builder(engine_name)",
+          "db_password": "Engines_Builder(random(10))",
           "collation": "utf8",
           "full_access": "false"
         }

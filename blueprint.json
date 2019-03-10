@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-03-08T15:23:44+11:00"
+    "timestamp": "2019-03-10T14:44:40+11:00"
   },
   "software": {
     "base": {
@@ -75,21 +75,6 @@
         "path": "/home/app/data/",
         "volume_name": "repos"
       }
-    ],
-    "framework_specific": {
-      "rake_tasks": [
-        {
-          "action": "db:migrate",
-          "always_run": true
-        },
-        {
-          "action": "db:seed"
-        },
-        {
-          "action": "assets:precompile",
-          "always_run": true
-        }
-      ]
-    }
+    ]
   }
 }

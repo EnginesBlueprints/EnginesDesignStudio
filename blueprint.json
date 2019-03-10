@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-03-10T18:42:08+11:00"
+    "timestamp": "2019-03-10T19:30:22+11:00"
   },
   "software": {
     "base": {
@@ -31,10 +31,10 @@
     },
     "scripts": {
       "start": {
-        "content": "#!/bn/sh\r\ncd /home/app\r\nbundle exec rake db:migrate\r\n\r\nbundle exec rake assets:precompile"
+        "content": "#!/bin/sh\r\ncd /home/app\r\nbundle exec rake db:migrate\r\n\r\nbundle exec rake assets:precompile"
       },
       "first_run": {
-        "content": "#!/bin/sh\r\n\r\nif ! test -f /home/home_dir/.ssh/identity\r\n then\r\n  ssh-keygen -P \"\" -f /home/home_dir/.ssh/identity\r\nfi  \r\ncd /home/app\r\nbundle exec rake db:migrate\r\n\r\nif ! test -f /home/engines/rub/flags/db_seeded\r\n then\r\n   bundle exec rake db:seed\r\n   touch /home/engines/rub/flags/db_seeded\r\nfi   "
+        "content": "#!/bin/sh\r\n\r\nif ! test -f /home/home_dir/.ssh/identity\r\n then\r\n  ssh-keygen -P \"\" -f /home/home_dir/.ssh/identity\r\nfi  \r\ncd /home/app\r\nbundle exec rake db:migrate\r\n\r\nif ! test -f /home/engines/rub/flags/db_seeded\r\n then\r\n   bundle exec rake db:seed\r\n   if test $? -eq 0\r\n    then\r\n      touch /home/engines/rub/flags/db_seeded\r\n    fi  \r\nfi   "
       }
     },
     "installed_packages": [
@@ -65,10 +65,10 @@
         "type_path": "database/sql/mysql",
         "variables": {
           "database_name": "_Engines_Builder(engine_name)",
-          "database_host": "_Engines_Builder(mysql_host)",
+          "database_host": "_Engines_System(mysql_host)",
           "db_username": "_Engines_Builder(engine_name)",
-          "db_password": "_Engines_Builder(random(10))",
-          "collation": "utf8",
+          "db_password": "_Engines_System(random(10))",
+          "collation": "utf8_general_ci",
           "full_access": "false"
         }
       }

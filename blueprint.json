@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-03-10T19:30:22+11:00"
+    "timestamp": "2019-03-11T18:29:54+11:00"
   },
   "software": {
     "base": {
@@ -70,6 +70,16 @@
           "db_password": "_Engines_System(random(10))",
           "collation": "utf8_general_ci",
           "full_access": "false"
+        }
+      }
+    ],
+    "environment_variables": [
+      {
+        "name": "GIT_SSH_COMMAND",
+        "value": "ssh -i /home/home_dir/.ssh/identity",
+        "immutable": true,
+        "input": {
+          "type": "boolean"
         }
       }
     ],

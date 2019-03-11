@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-03-11T18:29:54+11:00"
+    "timestamp": "2019-03-11T18:52:01+11:00"
   },
   "software": {
     "base": {
@@ -26,7 +26,7 @@
       "http_protocol": "https_only",
       "memory": {
         "required": 384,
-        "recommended": 512
+        "recommended": 768
       }
     },
     "scripts": {

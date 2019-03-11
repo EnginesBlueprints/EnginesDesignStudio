@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-03-11T18:52:01+11:00"
+    "timestamp": "2019-03-12T09:39:11+11:00"
   },
   "software": {
     "base": {
@@ -76,7 +76,7 @@
     "environment_variables": [
       {
         "name": "GIT_SSH_COMMAND",
-        "value": "ssh -i /home/home_dir/.ssh/identity",
+        "value": "ssh -i /home/home_dir/.ssh/identity  -o StrictHostKeyChecking=no",
         "immutable": true,
         "input": {
           "type": "boolean"
